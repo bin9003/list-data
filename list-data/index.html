@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>列表</title>
+	<script type="text/javascript" src="js/data.js"></script>
+	<script src="js/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="css/bin-style.css"/>
+</head>
+<body>
+	<div class="bin-list">
+		<dl>
+			<dd class="bin-jobname">职位名称</dd>
+			<dd class="bin-jobtypes">职位类型</dd>
+			<dd class="bin-jobcompany">公司名称</dd>
+			<dd class="bin-jobnumber">招聘人数</dd>
+			<dd class="bin-joblocation">工作地点</dd>
+			<dd class="bin-jobtime">发布时间</dd>
+		</dl>
+		<dl>
+			<dd class="bin-jobname"><a href="">数据挖掘师</a></dd>
+			<dd class="bin-jobtypes">数据挖掘</dd>
+			<dd class="bin-jobcompany">北京梦创义科技有限公司</dd>
+			<dd class="bin-jobnumber">2</dd>
+			<dd class="bin-joblocation">北京</dd>
+			<dd class="bin-jobtime">2017-03-05</dd>
+		</dl>
+		<dl>
+			<dd class="bin-jobname"><a href="">数据挖掘师</a></dd>
+			<dd class="bin-jobtypes">数据挖掘</dd>
+			<dd class="bin-jobcompany">北京梦创义科技有限公司</dd>
+			<dd class="bin-jobnumber">2</dd>
+			<dd class="bin-joblocation">北京</dd>
+			<dd class="bin-jobtime">2017-03-05</dd>
+		</dl>
+		<dl>
+			<dd class="bin-jobname"><a href="">数据挖掘师</a></dd>
+			<dd class="bin-jobtypes">数据挖掘</dd>
+			<dd class="bin-jobcompany">北京梦创义科技有限公司</dd>
+			<dd class="bin-jobnumber">2</dd>
+			<dd class="bin-joblocation">北京</dd>
+			<dd class="bin-jobtime">2017-03-05</dd>
+		</dl>
+	</div>
+	<div class="bin-page">
+		<dl>
+			<dd><a href="">上一页</a></dd>
+			<dd><a href="">1</a></dd>
+			<dd><a href="">2</a></dd>
+			<dd><a href="">3</a></dd>
+			<dd><a href="">4</a></dd>
+			<dd><a href="">...</a></dd>
+			<dd><a href="">10</a></dd>
+			<dd><a href="">下一页</a></dd>
+		</dl>
+	</div>
+	<script type="text/javascript">
+		function binForm () {
+			this.data = data;
+			this.jEle = '';
+		}
+		binForm.prototype.init = function () {
+			//console.log(this.data);
+			this.EachData ();
+		}
+		// 循环数据
+		binForm.prototype.EachData = function () {
+			var This = this;
+			for ( var key in this.data ) {
+				for (var k in this.data[key]) {
+					console.log(this.data[key][k]);
+					
+				}
+			}
+		}
+		var binForms = new binForm();
+		binForms.init();
+	</script>
+</body>
+</html>

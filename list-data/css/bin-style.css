@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+.bin-list {
+	width: 813px;
+	font-size: 14px;
+}
+
+.bin-list>dl {
+	overflow: hidden;
+	zoom: 1;
+	border-bottom: 1px dashed #999999;
+	padding-left: 15px;
+}
+
+.bin-list>dl>dd {
+	float: left;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+.bin-list>dl>dd>a {
+	text-decoration: none;
+	color: #000;
+}
+.bin-list>dl>.bin-jobname {
+	width: 114px;
+}
+.bin-list>dl>.bin-jobtypes {
+	width: 116px;
+}
+.bin-list>dl>.bin-jobcompany {
+	width: 238px;
+}
+.bin-list>dl>.bin-jobnumber {
+	width: 74px;
+}
+.bin-list>dl>.bin-joblocation {
+	width: 138px;
+}
+.bin-list>dl>.bin-jobtime {
+	width: 85px;
+}
+.bin-list>dl:first-child {
+	background-color: #f2f2f2;
+	border: 0;
+}
+.bin-list>dl:first-child>dd {
+	height: 45px;
+	line-height: 45px;
+	font-size: 16px;
+	font-weight: 700;
+}
+.bin-list>dl>dd:first-child {
+	text-align: left;
+}
+
+/* 翻页 */
+.bin-page {
+	padding-top: 15px;
+	padding-right: 36px;
+	width: 777px;
+	overflow: hidden;
+	zoom: 1;
+}
+.bin-page>dl {
+	float: right;
+	height: 30px;
+}
+.bin-page>dl>dd {
+	float: left;
+	margin-left: 11px;
+	font-size: 15px;
+	line-height: 30px;
+	background-color: #0babd7;
+	color: #fff;
+}
+.bin-page>dl>dd>a {
+	padding: 0 10px;
+	text-decoration: none;
+	color: #fff;
+}
